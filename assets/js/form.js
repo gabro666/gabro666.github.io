@@ -5,8 +5,8 @@ function sendMail() {
         message: document.getElementById("message").value,
     };
 
-    const serviceID = ""; / * inserimento dati emailjs * /
-    const templateID = ""; / * inserimento dati emailjs * /
+    const serviceID = "service_69tak5c";
+    const templateID = "template_ei5gehw"; 
 
     emailjs.send(serviceID, templateID, params)
         .then(res => {

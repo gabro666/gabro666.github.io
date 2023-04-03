@@ -6,16 +6,16 @@
   <title>Carlo Gabbrielli - Contact</title>
   <link rel="icon" type="image/x-icon" href="../assets/images/lg1.png">
   <link href='../assets/css/styles.css' rel='stylesheet' />
-<!--
-  <script src="index.js"></script>
-  
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init(""); emajs dati utente
+    
+  <script src="../assets/js/form.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+      emailjs.init("D-MVLWHuopWdopmID"); 
     })();
   </script>
-  -->
+  
 </head>
 
 <body>
@@ -32,8 +32,7 @@
     </ul>
   </div>
   <div class="form">
-    <form action="/action_page.php">
-
+    <form>
       <label for="name">Chi sei?</label>
       <input type="text" id="name" name="name" placeholder="Nome e Cognome" required />
 
@@ -44,7 +43,7 @@
       <textarea type="text" id="message" name="message" placeholder="Scrivimi per avere più info.."
         style="height:200px"></textarea>
 
-      <input type="submit" value="Submit"> <!-- onclick="sendMail()" -->
+      <button class="submit" onclick="sendMail()">Submit</button> 
     </form>
   </div>
   <div class="social">
