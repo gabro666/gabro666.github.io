@@ -20,6 +20,12 @@
 
 <body>
 
+<div class="hero">
+
+
+  
+</div>
+
   <div class='header'>
     <div class='logo'><a href='../index.html'> <img src='../assets/images/logo_trasp.png' width="500" /></a></div>
     <ul class='menu'>
@@ -31,19 +37,23 @@
       <li><a href='form.html'>Contact</a></li>
     </ul>
   </div>
+
+
+
   <div class="form">
-    <form>
-      <label for="name">Chi sei?</label>
-      <input type="text" id="name" name="name" placeholder="Nome e Cognome" required />
-
+    <div id="error"></div>
+    <form id="form" action="/" method="GET">
+          <label for="name">Chi sei?</label>
+      <input type="text" id="name" name="name" placeholder="Nome e Cognome" onkeyup="validateName()" required />
+       <span id="name-error"></span>
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="john.doe@example.com" required />
-
+      <input type="email" id="email" name="email" placeholder="john.doe@example.com" onkeyup="validateEmail()" required />
+<span id="email-error"></span>
       <label for="message">Messaggio</label>
       <textarea type="text" id="message" name="message" placeholder="Scrivimi per avere più info.."
-        style="height:200px"></textarea>
-
-      <button class="submit" onclick="sendMail()">Submit</button> 
+        style="height:200px" onkeyup="validateMessage()" required></textarea>
+<span id="message-error"></span>
+      <button class="submit" onclick="return sendMail()">Submit</button> 
     </form>
   </div>
   <div class="social">
