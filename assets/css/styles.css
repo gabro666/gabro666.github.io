@@ -243,6 +243,12 @@ input[type=text]:invalid,
   border-radius: 10px;
 }
 
+a {
+
+  text-decoration: none;
+
+}
+
 @media (max-width: 800px) {
   .navbar {
     flex-direction: column;
