@@ -24,13 +24,6 @@ body {
   height: 100vh;
 }
 
-footer {
-  background-color: rgb(255, 255, 255);
-  color: white;
-  text-align: center;
-  padding: 80px;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
