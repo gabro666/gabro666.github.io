@@ -10,14 +10,6 @@ body {
   padding-top: 250px;
 }
 
-
-.hero {
-  background-color: #ffffff;
-  height: 100vh;
-  color: white;
-  font-size: 40px;
-}
-
 .top {
   text-align: center;
   background-color: #ffffff;
@@ -56,11 +48,13 @@ p {
   font-weight: 300;
 }
 
-.hero-area {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  align-items: center;
+.section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 500px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #ccc;
 }
 
 .sub-section {
@@ -69,24 +63,13 @@ p {
   padding: 80px;
 }
 
-.section {
-  margin: auto;
-  margin-top: 0px;
-  margin-bottom: 50px;
-  width: 500px;
-  border-radius: 5px;
-  padding: 100px;
-  background-color: #000000;
-  color: #ccc;
-}
+
 
 .sub-section-alternative {
-  margin: auto;
-    margin-top: 0px;
+    margin-top: 50px;
     margin-bottom: 50px;
     width: 500px;
     border-radius: 5px;
-    padding: 80px;
     background-color: #000000;
     color: #ccc;
 }
