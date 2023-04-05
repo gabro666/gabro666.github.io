@@ -75,20 +75,15 @@
   </section>
 
   <div class="form">
-    <div id="error"></div>
-    <form id="form" action="/" method="GET">
+      <form id="form" action="https://formsubmit.co/3265d0868530b28acc31427bdc26f6f6" method="POST">
       <label for="name">Chi sei?</label>
-      <input type="text" id="name" name="name" placeholder="Nome e Cognome" onkeyup="validateName()" required />
+      <input type="text" id="name" name="name" placeholder="Nome e Cognome" required />
       <span id="name-error"></span>
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="john.doe@example.com" onkeyup="validateEmail()"
-        required />
-      <span id="email-error"></span>
+      <input type="email" id="email" name="email" placeholder="john.doe@example.com"  required />
       <label for="message">Messaggio</label>
-      <textarea type="text" id="message" name="message" placeholder="Scrivimi per avere più info.." style="height:200px"
-        onkeyup="validateMessage()" required></textarea>
-      <span id="message-error"></span>
-      <button class="submit" onclick="return sendMail()">Submit</button>
+      <textarea type="text" id="message" name="message" placeholder="Scrivimi per avere più info.." style="height:200px" required></textarea>
+      <button class="submit">Submit</button>
     </form>
   </div>
 
