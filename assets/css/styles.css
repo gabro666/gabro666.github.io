@@ -6,22 +6,31 @@
 
 body {
   font-family: Bodoni MT, sans-serif;
-  margin: 0;
+  margin: auto;
+  width: 100%;
   padding-top: 250px;
 }
 
 .top {
+  margin: auto;
   text-align: center;
   background-color: #ffffff;
   padding: 40px;
-  
+  width: 100%;
   margin-bottom: 100px;
-  height: 75vh;
+  height: auto;
 }
 
-.top
-img {
-margin: 40px;
+.logo .desktop {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 40px;
+  width: 75%;
+}
+
+.logo .mobile {
+  display: none;
 }
 
 nav {
@@ -43,12 +52,15 @@ li {
 
 h1 {
   font-size: 70px;
-  margin: 0;
+  margin: 40px;
+
+
 }
 
 h2 {
   font-size: 50px;
   margin: 0;
+
 }
 
 h3 {
@@ -62,43 +74,49 @@ p {
 }
 
 .sub-section {
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
-  padding: 80px;
+  padding: 40px;
   background-color: #5D6063;
   color: #ffffff;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
   border-radius: 5px;
 }
 
-.section {
-  margin: auto;
-  margin-top: 0px;
-  margin-bottom: 50px;
-  width: 500px;
-  border-radius: 5px;
+.resume {
   background-color: #000000;
-  color: #ccc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.resume:hover {
+  background-color: #ccc;
+  color: rgb(0, 0, 0);
 }
 
 .sub-section-alternative {
-   margin: auto;
-    width: 500px;
-    border-radius: 5px;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  border-radius: 5px;
 }
 
 .project-card {
   color: #d1ae00;
   background-color: #5D6063;
   width: 300px;
-  height: 400px;
-  margin: 10px;
+  height: 500px;
   border-radius: 5px;
+  margin: 10px;
 }
 
 .project-container {
@@ -108,7 +126,7 @@ p {
 
 
 .subtext {
-  color: #000000;
+  color: #ffffff;
   padding: 10px;
   font-size: 15px;
   text-align: center;
@@ -126,15 +144,16 @@ p {
 }
 
 .social {
+  width: 100%;
+  margin: auto;
   text-align: center;
   background-color: #8f8f8fb0;
   border-radius: 5px;
-  width: 100%;
+
   padding: 20px;
 }
 
-.social
-img {
+.social img {
   width: 50px;
   height: 50px;
 }
@@ -150,6 +169,7 @@ img {
   background-color: #8f8f8fb0;
   color: #000000;
   font-size: 22px;
+  border-radius: 5px;
 }
 
 
@@ -261,13 +281,24 @@ a {
   text-decoration: none;
 }
 
-.brand-title
-img {
-    width: 50px;
-    height: 50px;
+.brand-title img {
+  width: 50px;
+  height: 50px;
+}
+
+
+@media (max-width: 800px) {
+
+  .logo .mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-@media screen and (max-width: 600px) {
+  .logo .desktop {
+    display: none;
+  }
+
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -299,4 +330,19 @@ img {
     display: flex;
   }
 
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+  }
+
+  .form {
+    width: 80%;
+  }
 }
