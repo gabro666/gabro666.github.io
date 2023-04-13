@@ -53,7 +53,7 @@ h1 {
   font-size: 70px;
   margin: 0;
   text-align: center;
- }
+}
 
 h2 {
   font-size: 50px;
@@ -159,7 +159,7 @@ p {
 }
 
 .social a {
- text-decoration: none;
+  text-decoration: none;
 }
 
 .form {
@@ -374,7 +374,7 @@ a:visited {
     width: 190px;
     height: 100%;
   }
- 
+
   .project-image {
     width: 170px;
     height: 100;
