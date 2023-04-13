@@ -206,6 +206,10 @@ textarea {
   resize: vertical;
 }
 
+message, textarea {
+   height: 200px;
+}
+
 input[type=text]:invalid,
 [type=email]:invalid {
   width: 100%;
