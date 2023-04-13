@@ -18,15 +18,15 @@
   transition: all .2s linear;
 }
 
-html::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
 }
 
-html::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: var(--black);
 }
 
-html::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: var(--white);
   border-radius: 50px;
 }
